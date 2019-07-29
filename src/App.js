@@ -6,6 +6,8 @@ import PostForm from './components/PostsForm.js'
 function App() {
   return (
     <div className="App">
+      <PostForm />
+      <hr></hr>
       <Posts />
     </div>
   );
