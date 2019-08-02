@@ -9,7 +9,7 @@ import Store from './store'
 
 function App() {
   return (
-    <Provider store={store}>
+    <Provider store={Store}>
     <div className="App">
       <PostForm />
       <hr></hr>
