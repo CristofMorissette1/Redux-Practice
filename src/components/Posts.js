@@ -9,6 +9,12 @@ class Posts extends Component {
         this.props.fetchPosts();
     }
 
+    componentWillReceiveProps(nextProp) {
+        if (nextProp.newPosts) {
+            this.props.posts.unshift(nextProp.newPosts)
+        }
+    }
+
     render(){
         const fetchPosts = this.props.posts.map(post => 
         <div key={post.id}>
